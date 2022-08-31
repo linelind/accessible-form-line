@@ -1,8 +1,12 @@
 @import "import/variables.css";
 
 body {
-    margin: 50px 30px;
+    margin: 30px;
     background-color: var(--white);
+    color: var(--black);
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
 }
 
 section,
@@ -11,23 +15,65 @@ form {
     margin: auto;
 }
 
-fieldset {
-    border: 0;
+nav {
+    text-align: center;
 }
 
-.amount-section {
-    background-color: var(--grey);
-    color: var(--white);
-    padding: 20px;
-    margin: 50px -30px;
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 8px;
+}
+
+.active {
+    border: 2px solid var(--grey);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
 }
 
 img {
     max-width: 100%;
 }
+
+fieldset {
+    border: 0;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.amount-section {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 30px;
+    margin: 50px -30px;
+}
+
+.amount-section h2 {
+    margin-bottom: 40px;
+}
+
+#amount {
+    max-width: 80px;
+    padding: 8px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
 .intro-section,
 .input-container,
-fieldset {
+.radio-buttons-container {
     display: flex;
 }
 
@@ -36,17 +82,55 @@ fieldset {
 }
 
 .input-container,
-fieldset {
+.radio-buttons-container {
     flex-direction: column;
 }
 
-.radio-label {
-    display: block;
+.radio-buttons-container {
+    gap: 15px;
 }
 
-.input-container input {
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.radio-label {
+    padding-left: 10px;
+}
+
+input[type="text"],
+textarea {
     padding: 8px 5px;
-    border: solid 2px var(--grey);
+    border: solid 3px var(--grey);
     border-radius: 2px;
     max-width: 300px;
+}
+
+.annet-container h2 {
+    margin-top: 70px;
+}
+
+.btn {
+    border: none;
+    border-radius: 2px;
+    color: var(--white);
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn-submit {
+    background-color: var(--grey);
+}
+
+.btn-reset {
+    background-color: var(--black);
+}
+
+footer {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 100px;
 }
