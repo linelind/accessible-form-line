@@ -1,9 +1,52 @@
-.header_container {
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 450px;
-    margin: 100px -60px 0 -60px;
-    background-image: url(../assets/images/libedinsky-unsplash.jpg);
-    background-position-y: top;
+@import "import/variables.css";
+
+body {
+    margin: 50px 30px;
+    background-color: var(--white);
+}
+
+section,
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+.amount-section {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 20px;
+    margin: 50px -30px;
+}
+
+img {
+    max-width: 100%;
+}
+.intro-section,
+.input-container,
+fieldset {
+    display: flex;
+}
+
+.intro-section {
+    flex-direction: column-reverse;
+}
+
+.input-container,
+fieldset {
+    flex-direction: column;
+}
+
+.radio-label {
+    display: block;
+}
+
+.input-container input {
+    padding: 8px 5px;
+    border: solid 2px var(--grey);
+    border-radius: 2px;
+    max-width: 300px;
 }

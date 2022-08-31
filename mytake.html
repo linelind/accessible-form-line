@@ -8,7 +8,8 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <section>
+        <div class="image-banner"></div>
+        <section class="intro-section">
             <div>
                 <h1>Gi en gave</h1>
                 <p>
@@ -25,39 +26,54 @@
             </div>
         </section>
         <form>
-            <div>
+            <div class="amount-section">
+                <h2>Hvor mye ønsker du å gi?</h2>
                 <p>
                     <label for="amount">Jeg ønsker å gi kroner</label>
                     <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
                 </p>
                 <fieldset>
                     <legend>Jeg ønsker å betale via</legend>
-                    <input type="radio" id="vipps" name="vipps" aria-required="true" required />
-                    <label for="vipps">vipps</label>
-                    <input type="radio" id="kort" name="kort" aria-required="true" required />
-                    <label for="kort">Kort</label>
+                    <div class="radio-buttons-container">
+                        <div>
+                            <input type="radio" id="vipps" name="vipps" aria-required="true" required />
+                            <label for="vipps" class="radio-label">vipps</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="kort" name="kort" aria-required="true" required />
+                            <label for="kort" class="radio-label">Kort</label>
+                        </div>
+                    </div>
                 </fieldset>
             </div>
-            <fieldset>
-                <legend>Informasjon om deg</legend>
-                <label>Fornavn*</label>
-                <input type="text" aria-required="true" required />
-                <label>Etternavn*</label>
-                <input type="text" aria-required="true" required />
-                <label>E-post*</label>
-                <input type="text" aria-required="true" required />
-                <label>Telefon*</label>
-                <input type="text" aria-required="true" required />
-            </fieldset>
-            <fieldset>
-                <legend>Annet</legend>
+            <section>
+                <h2>Informasjon om deg</h2>
+                <p class="input-container">
+                    <label>Fornavn</label>
+                    <input type="text" aria-required="true" required />
+                </p>
+                <p class="input-container">
+                    <label>Etternavn</label>
+                    <input type="text" aria-required="true" required />
+                </p>
+                <p class="input-container">
+                    <label>E-post</label>
+                    <input type="text" aria-required="true" required />
+                </p>
+                <p class="input-container">
+                    <label>Telefon</label>
+                    <input type="text" aria-required="true" required />
+                </p>
+            </section>
+            <section>
+                <h2>Annet</h2>
 
                 <label>Jeg ønsker skattefradrag <input type="checkbox" /></label>
                 <label>Fødselsdato (* hvis ja)</label>
                 <input type="text" />
                 <label>Kommentar</label>
                 <textarea></textarea>
-            </fieldset>
+            </section>
             <input type="submit" value="Gi beløp" />
             <input type="reset" value="Avbryt" />
         </form>
