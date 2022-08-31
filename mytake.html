@@ -5,52 +5,61 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Bli fast giver og bidra til en bedre hverdag for mennesker med synstap." />
         <title>Kodeintervju | Line</title>
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>Gi en gave</h1>
-        <p>
-            Å miste synet er en livskrise der det meste må læres på nytt. En gave fra deg gjør oss i stand til å hjelpe et menneske til å ta det første skrittet
-            tilbake til hverdagen etter et synstap.
-        </p>
-        <p>Blir du fastgiver er du med på hele reisen.</p>
-        <img
-            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            width="auto"
-            height="200"
-        />
+        <section>
+            <div>
+                <h1>Gi en gave</h1>
+                <p>
+                    Å miste synet er en livskrise der det meste må læres på nytt. En gave fra deg gjør oss i stand til å hjelpe et menneske til å ta det første
+                    skrittet tilbake til hverdagen etter et synstap.
+                </p>
+                <p>Blir du fastgiver er du med på hele reisen.</p>
+            </div>
+            <div>
+                <img
+                    src="assets/images/libedinsky-unsplash.jpg"
+                    alt="En jente sitter på skuldrene til en voksen. Ved å holde tommel og pekefinger sammen lager jenta noe som ligner på briller med hendene sine som hun holder foran øynene."
+                />
+            </div>
+        </section>
         <form>
-            <b>Fornavn*</b>
-            <input type="text" /><br />
+            <div>
+                <p>
+                    <label for="amount">Jeg ønsker å gi kroner</label>
+                    <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
+                </p>
+                <fieldset>
+                    <legend>Jeg ønsker å betale via</legend>
+                    <input type="radio" id="vipps" name="vipps" aria-required="true" required />
+                    <label for="vipps">vipps</label>
+                    <input type="radio" id="kort" name="kort" aria-required="true" required />
+                    <label for="kort">Kort</label>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Informasjon om deg</legend>
+                <label>Fornavn*</label>
+                <input type="text" aria-required="true" required />
+                <label>Etternavn*</label>
+                <input type="text" aria-required="true" required />
+                <label>E-post*</label>
+                <input type="text" aria-required="true" required />
+                <label>Telefon*</label>
+                <input type="text" aria-required="true" required />
+            </fieldset>
+            <fieldset>
+                <legend>Annet</legend>
 
-            <b>Etternavn*</b>
-            <input type="text" /><br />
-
-            <b>Kr*:</b>
-            <input type="text" /><br />
-
-            <b>Betalingstype:</b>
-            <label><input type="radio" name="paymentType" />Vipps</label>
-            <label><input type="radio" name="paymentType" />Kort</label><br />
-
-            <b>E-post*:</b>
-            <input type="text" /><br />
-
-            <b>Telefon*:</b>
-            <input type="text" /><br />
-
-            <label><b>Jeg ønsker skattefradrag</b> <input type="checkbox" /></label><br />
-
-            <b>Fødselsdato (* hvis ja):</b>
-            <input type="text" /><br />
-
-            <b>Kommentar:</b>
-            <textarea></textarea><br />
-
-            <input type="submit" />
-            <input type="reset" />
-
-            <p>* - Obligatoriske felt</p>
+                <label>Jeg ønsker skattefradrag <input type="checkbox" /></label>
+                <label>Fødselsdato (* hvis ja)</label>
+                <input type="text" />
+                <label>Kommentar</label>
+                <textarea></textarea>
+            </fieldset>
+            <input type="submit" value="Gi beløp" />
+            <input type="reset" value="Avbryt" />
         </form>
     </body>
 </html>
