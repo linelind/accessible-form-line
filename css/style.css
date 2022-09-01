@@ -9,11 +9,11 @@ main {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -91,22 +91,20 @@ form .form-group {
 form .form-group label {
   margin-bottom: -10px;
 }
-
-.skattefradrag-skjultinnhold {
+form .skattefradrag-skjultinnhold {
   display: none;
 }
-
-.button-primary,
-.button-secondary {
+form #btn-gi,
+form #btn-avbryt {
   color: #f2f2f2;
 }
-
-.button-primary {
+form #btn-gi {
   background-color: #525a64;
   border: 2px solid #525a64;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
-
-.button-secondary {
+form #btn-avbryt {
   background-color: #161717;
   border: 2px solid #161717;
 }

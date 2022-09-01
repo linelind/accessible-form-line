@@ -42,23 +42,25 @@ form {
             margin-bottom: -10px;
         }
     }
-}
 
-.skattefradrag-skjultinnhold {
-    display: none;
-}
+    .skattefradrag-skjultinnhold {
+        display: none;
+    }
 
-.button-primary,
-.button-secondary {
-    color: getColour(white);
-}
+    #btn-gi,
+    #btn-avbryt {
+        color: getColour(white);
+    }
 
-.button-primary {
-    background-color: getColour(grey);
-    border: 2px solid getColour(grey);
-}
+    #btn-gi {
+        background-color: getColour(grey);
+        border: 2px solid getColour(grey);
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
 
-.button-secondary {
-    background-color: getColour(black);
-    border: 2px solid getColour(black);
+    #btn-avbryt {
+        background-color: getColour(black);
+        border: 2px solid getColour(black);
+    }
 }
