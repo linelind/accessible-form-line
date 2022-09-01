@@ -65,3 +65,13 @@ function checkCheckbox() {
         hiddenContent.style.display = "none";
     }
 }
+
+const btnAvbryt = document.querySelector("#btn-avbryt");
+
+btnAvbryt.onclick = function resetForm() {
+    const reset = confirm("Er du sikker på at du vil fjerne informasjonen i skjemaet?");
+
+    if (reset) {
+        form.reset();
+    }
+};
