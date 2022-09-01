@@ -14,7 +14,7 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
             crossorigin="anonymous"
         />
-        <link href="css/style.css" rel="stylesheet" />
+        <!--  <link href="css/style.css" rel="stylesheet" /> -->
     </head>
     <body>
         <header>
@@ -42,44 +42,56 @@
                     alt="En jente sitter på skuldrene til en voksen. Ved å holde tommel og pekefinger sammen lager jenta noe som ligner på briller med hendene sine som hun holder foran øynene."
                 />
             </div>
-
-            <form>
-                <div class="amount-section">
-                    <h2>Beløpet du vil gi</h2>
-                    <p>
-                        <label for="amount">Jeg ønsker å gi kroner</label>
-                        <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
-                    </p>
-                    <fieldset>
-                        <legend>Jeg ønsker å betale via</legend>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
-                            <label class="form-check-label" for="exampleRadios1"> Default radio </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                            <label class="form-check-label" for="exampleRadios2"> Second default radio </label>
-                        </div>
-                    </fieldset>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
         </section>
+
         <form>
+            <div class="amount-section">
+                <h2>Beløpet du vil gi</h2>
+                <p>
+                    <label for="amount">Jeg ønsker å gi kroner</label>
+                    <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
+                </p>
+                <fieldset>
+                    <legend>Jeg ønsker å betale via</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                        <label class="form-check-label" for="exampleRadios1"> Vipps </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                        <label class="form-check-label" for="exampleRadios2"> Kort </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" class="form-control" id="fornavn" aria-required="true" required />
+            </div>
+
+            <div class="form-group">
+                <label for="etternavn">Etternavn</label>
+                <input type="text" class="form-control" id="etternavn" aria-required="true" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-post</label>
+                <input type="email" class="form-control" id="email" aria-required="true" required />
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input type="tel" class="form-control" id="telefon" aria-required="true" required />
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Gi beløp</button>
+            <button type="reset" class="btn btn-secondary btn-lg btn-block">Avbryt</button>
+        </form>
+
+        <!-- <form>
             <div class="amount-section">
                 <h2>Beløpet du vil gi</h2>
                 <p>
@@ -137,7 +149,7 @@
 
             <button type="submit" class="btn btn-primary btn-lg btn-block">Gi beløp</button>
             <button type="reset" class="btn btn-secondary btn-lg btn-block">Avbryt</button>
-        </form>
+        </form> -->
 
         <!-- JavaScript bootstrap -->
         <script
