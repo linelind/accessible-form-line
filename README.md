@@ -22,13 +22,15 @@ Oppsummering av endringer gjort i arbeid med oppgave til kodeintervju 2022.
 
 10. Lagt til validering og tydelige tilbakemeldinger i skjemaet.
 11. Skjult felt for fødselsnummer frem til bruker aktivt velger at de ønsker skattefradrag.
+12. Brukt aria-required="true" på obligatoriske felt for å sikre at skjermleser plukker opp denne informasjonen.
 
 ---
 
 ## Andre valg
 
-12. Valgt et bilde som skaper mer følelse hos den som besøker siden.
-13. Valgt en tydelig font med god fontstørrelse og god linjeavstand.
-14. Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
-15. Brukt designet til å fremheve det viktigste på siden og lede bruker gjennom informasjonen.
-16. Lagt inn et forslag til beløp og en minstesum på 50 kr.
+13. Valgt et bilde som skaper mer følelse hos den som besøker siden.
+14. Valgt en tydelig font med god fontstørrelse og god linjeavstand.
+15. Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
+16. Brukt designet til å fremheve det viktigste på siden og lede bruker gjennom informasjonen.
+17. Lagt inn et forslag til beløp og en minstesum på 50 kr.
+18. Valgt farger som er rolige, seriøse og har god kontrast til hverandre.
