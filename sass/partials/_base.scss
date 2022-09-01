@@ -10,17 +10,38 @@ main {
     padding: 30px;
 
     @media (min-width: $tablet-width) {
-        max-width: 600px;
+        max-width: 500px;
         margin: auto;
     }
 
-    .jumbotron {
-        background: getColour(white);
-        padding: 0;
+    @media (min-width: $laptop-width) {
+        max-width: none;
+    }
+}
+
+.jumbotron {
+    background: getColour(white);
+    padding: 0;
+
+    @media (min-width: $laptop-width) {
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: auto;
     }
 
     .image-banner {
         max-width: 100%;
+    }
+}
+
+.laptop-container,
+.btn {
+    @media (min-width: $laptop-width) {
+        max-width: 500px;
+        margin: auto;
     }
 }
 
