@@ -9,6 +9,17 @@ const tel = document.querySelector("#telefon");
 const telError = document.querySelector("#telefon-error");
 const submitButton = document.querySelector(".btn-primary");
 
+const socialSecInput = document.querySelector("#social-sec-number");
+const hiddenContent = document.querySelector(".skattefradrag-skjultinnhold");
+const checkbox = document.querySelector("#skattefradrag");
+
+const btnAvbryt = document.querySelector("#btn-avbryt");
+
+form.addEventListener("submit", validateForm);
+form.addEventListener("submit", confirmSending);
+
+checkbox.addEventListener("click", checkCheckbox);
+
 function validateForm(event) {
     event.preventDefault();
 
@@ -37,7 +48,30 @@ function validateForm(event) {
     }
 }
 
-form.addEventListener("submit", validateForm);
+function confirmSending() {
+    if (checkLength(firstName.value, 0) && checkLength(lastName.value, 0) && validateEmail(email.value) && checkLength(tel.value, 7)) {
+        form.reset();
+        submitButton.value = "Takk for gave";
+    }
+}
+
+function checkCheckbox() {
+    if (checkbox.checked === true) {
+        hiddenContent.style.display = "block";
+        skattefradrag.required = true;
+    } else {
+        hiddenContent.style.display = "none";
+        skattefradrag.required = false;
+    }
+}
+
+btnAvbryt.onclick = function resetForm() {
+    const reset = confirm("Er du sikker på at du vil fjerne informasjonen i skjemaet?");
+
+    if (reset) {
+        form.reset();
+    }
+};
 
 function checkLength(value, len) {
     if (value.trim().length > len) {
@@ -52,26 +86,3 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
-
-const hiddenContent = document.querySelector(".skattefradrag-skjultinnhold");
-const checkbox = document.querySelector("#skattefradrag");
-
-checkbox.addEventListener("click", checkCheckbox);
-
-function checkCheckbox() {
-    if (checkbox.checked === true) {
-        hiddenContent.style.display = "block";
-    } else {
-        hiddenContent.style.display = "none";
-    }
-}
-
-const btnAvbryt = document.querySelector("#btn-avbryt");
-
-btnAvbryt.onclick = function resetForm() {
-    const reset = confirm("Er du sikker på at du vil fjerne informasjonen i skjemaet?");
-
-    if (reset) {
-        form.reset();
-    }
-};

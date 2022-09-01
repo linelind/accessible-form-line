@@ -12,9 +12,8 @@ Oppsummering av endringer gjort i arbeid med oppgave til kodeintervju 2022.
 4. Endret rekkefølge på innføringsfelt for å tydeliggjøre hva målet til skjemaet er. Bekløp og betaling bør komme først.
 5. Fjernet <b></b>, og erstattet disse tagene med <label> i <form>.
 6. La til <fieldset> og <legend> for å dele skjemaet opp mer og vise tydeligere hva som henger sammen av informasjonsbolker. Dette skillet tydeliggjøres også i designet.
-7. Fjernet \* og tilhørende forklaring og bruker heller required og error-meldinger for å gi bruker informasjon om felt som må fylles inn.
-8. Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
-9. La tekst i <button>-elementet.
+7. Fjernet \* og tilhørende forklaring og bruker heller required og error-meldinger for å gi bruker informasjon om felt som må fylles ut.
+8. La tekst i <button>-elementet.
 
 ---
 
@@ -22,16 +21,16 @@ Oppsummering av endringer gjort i arbeid med oppgave til kodeintervju 2022.
 
 Lagt til validering og tydelige tilbakemeldinger i skjemaet.
 
-Valgt en tydelig font med god fontstørrelse og linjeavstand.
+Skjult felt for fødselsnummer frem til bruker aktivt velger at de ønsker skattefradrag.
 
 ---
 
 ## Andre valg
 
----
-
 Valgt et bilde som skaper mer følelse hos den som besøker siden.
 
-Lagt inn et forslag til beløp og en minstesum på 50 kr.
+Valgt en tydelig font med god fontstørrelse og god linjeavstand.
 
-Ikke brukt ikon og logoer. Dette kunne med fordel blitt brukt for å hjelpe for eksempel seende som scanner siden og dyslektikere.
+Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
+
+Lagt inn et forslag til beløp og en minstesum på 50 kr.
