@@ -34,3 +34,4 @@ Oppsummering av endringer gjort i arbeid med oppgave til kodeintervju 2022.
 16. Brukt designet til å fremheve det viktigste på siden og lede bruker gjennom informasjonen.
 17. Lagt inn et forslag til beløp og en minstesum på 50 kr.
 18. Valgt farger som er rolige, seriøse og har god kontrast til hverandre.
+19. La til et ekstra steg når en velger "Avbryt", sånn at bruker som bommer ikke sletter innholdet i skjemaet uten å mene det.

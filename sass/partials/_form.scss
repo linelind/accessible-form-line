@@ -64,3 +64,10 @@ form {
         border: 2px solid getColour(black);
     }
 }
+
+.success-message {
+    text-align: center;
+    color: getColour(grey);
+    padding-top: 20px;
+    display: none;
+}

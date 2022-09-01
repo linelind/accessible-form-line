@@ -162,6 +162,13 @@ form #btn-avbryt {
   border: 2px solid #161717;
 }
 
+.success-message {
+  text-align: center;
+  color: #525a64;
+  padding-top: 20px;
+  display: none;
+}
+
 .form-error {
   display: none;
   border: 2px solid #b90d17;

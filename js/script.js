@@ -13,6 +13,7 @@ const socialSecInput = document.querySelector("#social-sec-number");
 const hiddenContent = document.querySelector(".skattefradrag-skjultinnhold");
 const checkbox = document.querySelector("#skattefradrag");
 
+const successMessage = document.querySelector(".success-message");
 const btnAvbryt = document.querySelector("#btn-avbryt");
 
 form.addEventListener("submit", validateForm);
@@ -51,7 +52,7 @@ function validateForm(event) {
 function confirmSending() {
     if (checkLength(firstName.value, 0) && checkLength(lastName.value, 0) && validateEmail(email.value) && checkLength(tel.value, 7)) {
         form.reset();
-        submitButton.value = "Takk for gave";
+        successMessage.style.display = "block";
     }
 }
 
