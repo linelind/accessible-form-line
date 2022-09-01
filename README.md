@@ -6,13 +6,15 @@ Oppsummering av endringer gjort i arbeid med oppgave til kodeintervju 2022.
 
 ## Endringer gjort i HTML-koden for å gjøre denne mer semantisk riktig.
 
-1. Overskrift endret fra <h2> til <h1>.
-2. Fjernet <br> og erstattet med <p></p> ved behov.
-3. Endret rekkefølge på innføringsfelt for å tydeliggjøre hva målet til skjemaet er. Bekløp og betaling bør komme først.
-4. Fjernet <b></b>, og erstattet disse tagene med <label> i <form>.
-5. La til <fieldset> og <legend> for å dele skjemaet opp mer og vise tydeligere hva som henger sammen av informasjonsbolker. Dette skillet tydeliggjøres også i designet.
-6. Fjernet \* og tilhørende forklaring og bruker heller required og error-meldinger for å gi bruker informasjon om felt som må fylles inn.
-7. Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
+1. Endret lang="en" to lang="nb".
+2. Overskrift endret fra <h2> til <h1>.
+3. Fjernet <br> og erstattet med <p></p> ved behov.
+4. Endret rekkefølge på innføringsfelt for å tydeliggjøre hva målet til skjemaet er. Bekløp og betaling bør komme først.
+5. Fjernet <b></b>, og erstattet disse tagene med <label> i <form>.
+6. La til <fieldset> og <legend> for å dele skjemaet opp mer og vise tydeligere hva som henger sammen av informasjonsbolker. Dette skillet tydeliggjøres også i designet.
+7. Fjernet \* og tilhørende forklaring og bruker heller required og error-meldinger for å gi bruker informasjon om felt som må fylles inn.
+8. Valg et tydeligere, enklere og mer folkelig språk som flere kan forstå.
+9. La tekst i <button>-elementet.
 
 ---
 
@@ -27,8 +29,6 @@ Valgt en tydelig font med god fontstørrelse og linjeavstand.
 ## Andre valg
 
 ---
-
-Lagt til meta description for å gjøre det lettere å finne siden.
 
 Valgt et bilde som skaper mer følelse hos den som besøker siden.
 
