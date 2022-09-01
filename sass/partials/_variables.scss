@@ -1,0 +1,16 @@
+$font-primary: "Roboto", sans-serif;
+
+$tablet-width: 640px;
+$laptop-width: 800px;
+
+$colours: (
+    black: #161717,
+    white: #f2f2f2,
+    grey: #525a64,
+    error-red: #b90d17,
+    error-lightred: #fee7e8,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}

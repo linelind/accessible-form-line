@@ -1,0 +1,127 @@
+body,
+nav {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.heading-skatt {
+  margin-top: 80px;
+}
+
+.info-felt {
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+main {
+  padding: 30px;
+}
+@media (min-width: 640px) {
+  main {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+main .jumbotron {
+  background: #f2f2f2;
+  padding: 0;
+}
+main .image-banner {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+form input[type=radio],
+form input[type=checkbox] {
+  transform: scale(1.5);
+}
+form .form-group input,
+form #kommentar {
+  border: 2px solid #161717;
+}
+form .form-check-label {
+  margin-left: 10px;
+}
+form .donasjon-container {
+  background-color: #525a64;
+  color: #f2f2f2;
+  margin: 50px -30px;
+  padding: 50px 30px;
+}
+form .donasjon-container #amount {
+  max-width: 80px;
+  padding: 5px;
+  margin-left: 10px;
+}
+form .donasjon-container legend {
+  font-size: 18px;
+  margin-top: 30px;
+}
+form .donasjon-container .form-check {
+  padding-top: 15px;
+}
+form .form-group {
+  margin-bottom: 30px;
+}
+form .form-group label {
+  margin-bottom: -10px;
+}
+
+.skattefradrag-skjultinnhold {
+  display: none;
+}
+
+.button-primary,
+.button-secondary {
+  color: #f2f2f2;
+}
+
+.button-primary {
+  background-color: #525a64;
+  border: 2px solid #525a64;
+}
+
+.button-secondary {
+  background-color: #161717;
+  border: 2px solid #161717;
+}
+
+.form-error {
+  display: none;
+  border: 2px solid #b90d17;
+  background-color: #fee7e8;
+  color: #b90d17;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.fa-circle-xmark {
+  font-size: 22px;
+  margin-left: 10px;
+  padding-top: 2px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+html {
+    margin: 0;
+}
+
+body {
+    background: getColour(white);
+}
+
+main {
+    padding: 30px;
+
+    @media (min-width: $tablet-width) {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .jumbotron {
+        background: getColour(white);
+        padding: 0;
+    }
+
+    .image-banner {
+        max-width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Bli fast giver og bidra til en bedre hverdag for mennesker med synstap." />
         <title>Gi en gave | Line</title>
+        <script src="https://kit.fontawesome.com/701f282bef.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -26,136 +27,91 @@
                 </ol>
             </nav>
         </header>
-
-        <section class="jumbotron">
-            <h1 class="display-4">Gi en gave</h1>
-            <p class="lead">
-                Å miste synet er en livskrise der det meste må læres på nytt. En gave fra deg gjør oss i stand til å hjelpe et menneske til å ta det første
-                skrittet tilbake til hverdagen etter et synstap.
-            </p>
-            <p class="lead">Blir du fastgiver er du med på hele reisen.</p>
-            <img
-                src="assets/images/libedinsky-unsplash.jpg"
-                alt="En jente sitter på skuldrene til en voksen. Ved å holde tommel og pekefinger sammen lager jenta noe som ligner på briller med hendene sine som hun holder foran øynene."
-            />
-            <hr class="my-4" />
-        </section>
-
-        <section>
-            <div>
+        <main>
+            <section class="jumbotron">
+                <h1 class="display-4">Gi en gave</h1>
+                <p class="lead">
+                    Å miste synet er en livskrise der det meste må læres på nytt. En gave fra deg gjør oss i stand til å hjelpe et menneske til å ta det første
+                    skrittet tilbake til hverdagen etter et synstap.
+                </p>
+                <p class="lead">Blir du fastgiver er du med på hele reisen.</p>
                 <img
                     src="assets/images/libedinsky-unsplash.jpg"
                     alt="En jente sitter på skuldrene til en voksen. Ved å holde tommel og pekefinger sammen lager jenta noe som ligner på briller med hendene sine som hun holder foran øynene."
+                    class="image-banner"
                 />
-            </div>
-        </section>
-
-        <form>
-            <div class="amount-section">
-                <h2>Beløpet du vil gi</h2>
-                <p>
-                    <label for="amount">Jeg ønsker å gi kroner</label>
-                    <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
-                </p>
-                <fieldset>
-                    <legend>Jeg ønsker å betale via</legend>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
-                        <label class="form-check-label" for="exampleRadios1"> Vipps </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                        <label class="form-check-label" for="exampleRadios2"> Kort </label>
-                    </div>
-                </fieldset>
-            </div>
-
-            <div class="form-group">
-                <label for="fornavn">Fornavn</label>
-                <input type="text" class="form-control" id="fornavn" aria-required="true" required />
-            </div>
-
-            <div class="form-group">
-                <label for="etternavn">Etternavn</label>
-                <input type="text" class="form-control" id="etternavn" aria-required="true" required />
-            </div>
-            <div class="form-group">
-                <label for="email">E-post</label>
-                <input type="email" class="form-control" id="email" aria-required="true" required />
-            </div>
-            <div class="form-group">
-                <label for="telefon">Telefon</label>
-                <input type="tel" class="form-control" id="telefon" aria-required="true" required />
-            </div>
-
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Gi beløp</button>
-            <button type="reset" class="btn btn-secondary btn-lg btn-block">Avbryt</button>
-        </form>
-
-        <!-- <form>
-            <div class="amount-section">
-                <h2>Beløpet du vil gi</h2>
-                <p>
-                    <label for="amount">Jeg ønsker å gi kroner</label>
-                    <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
-                </p>
-                <fieldset>
-                    <legend>Jeg ønsker å betale via</legend>
-                    <div class="radio-buttons-container">
-                        <div>
-                            <input type="radio" id="vipps" name="payment" aria-required="true" required />
-                            <label for="vipps" class="radio-label">Vipps</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="kort" name="payment" aria-required="true" required />
-                            <label for="kort" class="radio-label">Kort</label>
-                        </div>
-                    </div>
-                </fieldset>
-            </div>
-            <section>
-                <h2>Informasjon om deg</h2>
-                <p class="input-container">
-                    <label for="fornavn">Fornavn</label>
-                    <input type="text" id="fornavn" aria-required="true" required />
-                </p>
-                <p class="input-container">
-                    <label for="etternavn">Etternavn</label>
-                    <input type="text" id="etternavn" aria-required="true" required />
-                </p>
-                <p class="input-container">
-                    <label for="email">E-post</label>
-                    <input type="text" id="email" aria-required="true" required />
-                </p>
-                <p class="input-container">
-                    <label for="telefon">Telefon</label>
-                    <input type="text" id="telefon" aria-required="true" required />
-                </p>
-            </section>
-            <section class="annet-container">
-                <h2>Annet</h2>
-                <p>
-                    <label for="skattefradrag">Jeg ønsker skattefradrag</label>
-                    <input type="checkbox" id="skattefradrag" />
-                </p>
-                <p>
-                    <label>Fødselsdato (* hvis ja)</label>
-                    <input type="text" />
-                </p>
-                <p>
-                    <label>Kommentar</label>
-                    <textarea></textarea>
-                </p>
+                <hr class="my-4" />
             </section>
 
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Gi beløp</button>
-            <button type="reset" class="btn btn-secondary btn-lg btn-block">Avbryt</button>
-        </form> -->
+            <form id="donationform">
+                <section class="donasjon-container">
+                    <h2>Beløpet du vil gi</h2>
+                    <p>
+                        <label for="amount">Jeg ønsker å gi kroner</label>
+                        <input type="number" name="amount" id="amount" value="200" min="50" aria-required="true" required />
+                    </p>
+                    <fieldset>
+                        <legend>Jeg ønsker å betale via</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                            <label class="form-check-label" for="exampleRadios1"> Vipps </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                            <label class="form-check-label" for="exampleRadios2"> Kort </label>
+                        </div>
+                    </fieldset>
+                </section>
+                <section>
+                    <h2>Informasjon om deg</h2>
+                    <div class="form-group">
+                        <label for="fornavn">Fornavn</label>
+                        <input type="text" class="form-control" id="fornavn" aria-required="true" />
+                        <div class="form-error" id="fornavn-error">Vennligst skriv inn fornavnet ditt.<i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="etternavn">Etternavn</label>
+                        <input type="text" class="form-control" id="etternavn" aria-required="true" />
+                        <div class="form-error" id="etternavn-error">Vennligst skriv inn etternavnet ditt.<i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" class="form-control" id="email" aria-required="true" />
+                        <div class="form-error" id="email-error">Vennligst skriv inn en gyldig e-post adresse.<i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" class="form-control" id="telefon" aria-required="true" />
+                        <div class="form-error" id="telefon-error">Telefonnummeret må bestå av 8 siffer.<i class="fa-regular fa-circle-xmark"></i></div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="heading-skatt">Skattefradrag</h2>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="skattefradrag" />
+                        <label class="form-check-label" for="skattefradrag">Jeg ønsker skattefradrag</label>
+                    </div>
+                    <div class="skattefradrag-skjultinnhold">
+                        <p class="info-felt">For at du skal få skattefradrag på gaven din trenger vi fødselsnummeret ditt.</p>
+                        <div class="form-group">
+                            <label for="skattefradrag">Fødselsdato</label>
+                            <input type="number" class="form-control" id="skattefradrag" />
+                        </div>
+                        <p class="info-felt">Legg gjerne igjen en kommentar om du ønsker.</p>
+                        <div class="form-group">
+                            <label for="kommentar">Kommentar</label>
+                            <textarea type="text" id="kommentar" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <button type="submit" class="btn button-primary btn-lg btn-block">Gi beløp</button>
+                <button type="button" class="btn button-secondary btn-lg btn-block">Avbryt</button>
+            </form>
+        </main>
+        <footer>
+            <p>Image from Unsplash. Photo credit Edi Libedinsky.</p>
+        </footer>
 
         <!-- JavaScript bootstrap -->
         <script
@@ -173,8 +129,6 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"
         ></script>
+        <script src="js/script.js"></script>
     </body>
-    <footer>
-        <p>Image from Unsplash. Photo credit Edi Libedinsky.</p>
-    </footer>
 </html>

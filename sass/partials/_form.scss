@@ -1,0 +1,64 @@
+form {
+    input[type="radio"],
+    input[type="checkbox"] {
+        transform: scale(1.5);
+    }
+
+    .form-group input,
+    #kommentar {
+        border: 2px solid getColour(black);
+    }
+
+    .form-check-label {
+        margin-left: 10px;
+    }
+
+    .donasjon-container {
+        background-color: getColour(grey);
+        color: getColour(white);
+        margin: 50px -30px;
+        padding: 50px 30px;
+
+        #amount {
+            max-width: 80px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        legend {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .form-check {
+            padding-top: 15px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 30px;
+
+        label {
+            margin-bottom: -10px;
+        }
+    }
+}
+
+.skattefradrag-skjultinnhold {
+    display: none;
+}
+
+.button-primary,
+.button-secondary {
+    color: getColour(white);
+}
+
+.button-primary {
+    background-color: getColour(grey);
+    border: 2px solid getColour(grey);
+}
+
+.button-secondary {
+    background-color: getColour(black);
+    border: 2px solid getColour(black);
+}

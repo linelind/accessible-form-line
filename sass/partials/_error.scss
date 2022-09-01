@@ -1,0 +1,14 @@
+.form-error {
+    display: none;
+    border: 2px solid getColour(error-red);
+    background-color: getColour(error-lightred);
+    color: getColour(error-red);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.fa-circle-xmark {
+    font-size: 22px;
+    margin-left: 10px;
+    padding-top: 2px;
+}
